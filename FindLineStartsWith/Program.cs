@@ -19,7 +19,8 @@ namespace FindLineStartsWith
                     "-1: An Error occurred (File missing probably)\n" +
                     "other number: line number where text was found.\n" +
                     "Example:\n\n" +
-                    "FindLineStartsWith.exe \"Text to find\" Filename");
+                    "FindLineStartsWith.exe \"Text to find\" Filename"+
+                    "Written by patrik jacobs (m821926@gmail.com)");
                 Console.ReadLine();
                 return -1;
             }
