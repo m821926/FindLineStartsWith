@@ -13,13 +13,13 @@ namespace FindLineStartsWith
         {
             if (args.Length != 2)
             {
-                Console.WriteLine("This application finds a text in a file. The text must be found at the beginning of the line.\n" +
-                    "It will return the line number where it finds the first coincidence. If it does not find the text it will return 0.\n\n"+
-                    "0: Text has not been Found.\n"+
-                    "-1: An Error occurred (File missing probably)\n" +
-                    "other number: line number where text was found.\n" +
-                    "Example:\n\n" +
-                    "FindLineStartsWith.exe \"Text to find\" Filename"+
+                Console.WriteLine("This application finds a text in a file.\nThe text must be found at the beginning of the line.\n" +
+                    "It will return the line number where it finds the first coincidence.\nIf it does not find the text it will return 0.\n\n"+
+                    "           0: Text has not been Found.\n"+
+                    "          -1: An Error occurred (File missing probably)\n" +
+                    "other number: line number where text was found.\n\n" +
+                    "Example:\n" +
+                    "FindLineStartsWith.exe \"Text to find\" Filename\n\n"+
                     "Written by patrik jacobs (m821926@gmail.com)");
                 Console.ReadLine();
                 return -1;
@@ -40,7 +40,7 @@ namespace FindLineStartsWith
             {
                 if (line.StartsWith(textToFind))
                 {
-                    Console.WriteLine("Text: "+ textToFind + " was found on line: " + lineNumber);
+                    Console.WriteLine("The text '"+ textToFind + "' was found on line number " + lineNumber);
                     return lineNumber;
                 }
                 lineNumber++;
